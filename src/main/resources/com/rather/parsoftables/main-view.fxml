@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="MainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="693.0" prefWidth="1000.0" style="-fx-background-color: #95A0AC; -fx-border-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rather.parsoftables.Controllers.MainController">
+   <children>
+      <VBox layoutX="14.0" layoutY="13.0" prefHeight="487.0" prefWidth="470.0" style="-fx-background-color: #595959; -fx-border-color: #FFFFFF;">
+         <children>
+            <Label alignment="CENTER" prefHeight="30.0" prefWidth="470.0" style="-fx-background-color: #404040; -fx-border-color: #FFFFFF;" text="Information" textFill="#ebebeb">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="ScrollPaneWithInfo" prefHeight="457.0" prefWidth="470.0" style="-fx-border-color: #ffffff; -fx-background-color: #595959;">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="457.0" prefWidth="470.0" style="-fx-background-color: #595959;" />
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="380.0" layoutY="13.0" prefHeight="487.0" prefWidth="196.0" style="-fx-background-color: #0cb09a; -fx-border-color: #FFFFFF;" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="230.0">
+         <children>
+            <Button fx:id="AcceptParametresButton" layoutX="27.0" layoutY="410.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #404040; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-color: #FFFFFF;" text="Accept" textFill="#ebebeb" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="60.0" />
+            <Button fx:id="ResetParametresButton" layoutX="106.0" layoutY="410.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #404040; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-color: #FFFFFF;" text="Reset" textFill="#ebebeb" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="60.0" />
+            <AnchorPane fx:id="AnchorPaneOfMetals" prefHeight="395.0" prefWidth="192" style="-fx-background-color: #595959; -fx-border-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="56.0" text="Volume" textFill="#ebebeb" AnchorPane.bottomAnchor="320.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <Label layoutX="14.0" layoutY="51.0" text="Weight " textFill="#ebebeb" AnchorPane.bottomAnchor="285.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font></Label>
+                  <TextField fx:id="VolumeTextField" layoutX="83.0" layoutY="14.0" prefHeight="25.0" prefWidth="95.0" AnchorPane.bottomAnchor="320.0" />
+                  <TextField fx:id="WeightTextField" layoutX="83.0" layoutY="51.0" prefHeight="25.0" prefWidth="95.0" AnchorPane.bottomAnchor="285.0" />
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #404040; -fx-border-color: #FFFFFF;" text="Metals parametres" textFill="#ebebeb">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="AnchorPaneOfParametres" prefHeight="395.0" prefWidth="192" style="-fx-background-color: #595959; -fx-border-color: #FFFFFF;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #404040; -fx-border-color: #FFFFFF;" text="Parametres" textFill="#ebebeb" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="14.0" prefHeight="25.0" prefWidth="70.0" text="Link" textFill="#ebebeb" AnchorPane.bottomAnchor="322.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="LinkTextField" layoutX="83.0" layoutY="14.0" prefHeight="25.0" AnchorPane.bottomAnchor="320.0" AnchorPane.rightAnchor="20.0" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="91.0" prefHeight="25.0" prefWidth="70.0" text="xPath" textFill="#ebebeb" AnchorPane.bottomAnchor="285.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cssQueryTextField" layoutX="83.0" layoutY="91.0" prefHeight="25.0" AnchorPane.bottomAnchor="285.0" AnchorPane.rightAnchor="20.0" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="119.0" prefHeight="25.0" prefWidth="70.0" text="Columns" textFill="#ebebeb">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ColumnsTextField" layoutX="83.0" layoutY="119.0" prefHeight="25.0" AnchorPane.rightAnchor="20.0" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="154.0" prefHeight="25.0" prefWidth="70.0" text="Rows" textFill="#ebebeb">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="RowsTextField" layoutX="83.0" layoutY="154.0" prefHeight="25.0" AnchorPane.rightAnchor="20.0" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="188.0" prefHeight="25.0" prefWidth="70.0" text="Index" textFill="#ebebeb">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IndexTableTextField" layoutX="83.0" layoutY="188.0" prefHeight="25.0" AnchorPane.rightAnchor="20.0" />
+               </children>
+            </AnchorPane>
+            <CheckBox fx:id="CheckBoxWayOfParsing" disable="true" layoutX="38.0" layoutY="452.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="121.0" text="Parsing of metals" visible="false" />
+         </children></AnchorPane>
+      <VBox layoutX="604.0" layoutY="465.0" prefHeight="165.0" prefWidth="650.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="650.0" style="-fx-background-color: #404040; -fx-border-color: #ffffff;" text="Problems" textFill="#ebebeb">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ScrollPane fx:id="ScrollPaneErrors" prefHeight="132.0" prefWidth="650.0" style="-fx-border-color: #ffffff; -fx-background-color: #595959;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="130.0" prefWidth="650.0" style="-fx-background-color: #595959;" />
+              </content>
+            </ScrollPane>
+         </children></VBox>
+      <AnchorPane layoutY="16.0" prefHeight="487.0" prefWidth="196.0" style="-fx-background-color: #0cb09a; -fx-border-color: #FFFFFF;" AnchorPane.leftAnchor="786.0" AnchorPane.rightAnchor="17.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <AnchorPane fx:id="AnchorPaneOfParametres1" prefHeight="395.0" prefWidth="192" style="-fx-background-color: #595959; -fx-border-color: #FFFFFF;">
+               <children>
+                  <Button fx:id="SelectPathSavingFileButton" disable="true" layoutX="153.0" layoutY="44.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="12.0" style="-fx-background-color: #404040; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-color: #FFFFFF;" text="..." textFill="#ebebeb" />
+                  <Label alignment="CENTER" prefHeight="30.0" prefWidth="192.0" style="-fx-background-color: #404040; -fx-border-color: #FFFFFF;" text="Saving files" textFill="#ebebeb">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="45.0" prefHeight="25.0" prefWidth="70.0" text="Path" textFill="#ebebeb">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="pathOfSaveFileTextField" disable="true" layoutX="83.0" layoutY="45.0" prefHeight="25.0" prefWidth="67.0" />
+                  <Label alignment="CENTER" layoutX="7.0" layoutY="80.0" prefHeight="25.0" prefWidth="70.0" text="Name" textFill="#ebebeb">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="nameOfSaveFileTextField" disable="true" layoutX="83.0" layoutY="80.0" prefHeight="25.0" prefWidth="95.0" />
+               </children>
+            </AnchorPane>
+            <Button fx:id="AcceptSaveFilesButton" disable="true" layoutX="27.0" layoutY="223.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #404040; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-color: #FFFFFF;" text="Save" textFill="#ebebeb" AnchorPane.bottomAnchor="40.0" />
+            <Button fx:id="ResetSaveFilesButton" disable="true" layoutX="106.0" layoutY="223.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="63.0" style="-fx-background-color: #404040; -fx-background-radius: 5; -fx-border-radius: 3; -fx-border-color: #FFFFFF;" text="Reset" textFill="#ebebeb" AnchorPane.bottomAnchor="40.0" />
+            <CheckBox fx:id="CheckBoxSaveFiles" layoutX="38.0" layoutY="265.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="121.0" text="Saving a file" AnchorPane.bottomAnchor="15.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="155.0" prefWidth="220.0" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <ImageView fx:id="imageGithubLink" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                  <Hyperlink fx:id="hyperLinkGithub" text="Hyperlink">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+               <children>
+                  <ImageView fx:id="imageDiscordLink" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                  <Hyperlink fx:id="hyperLinkDiscord" text="Hyperlink">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="60.0" prefHeight="50.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+               <children>
+                  <ImageView fx:id="imageYoutubeLink" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" />
+                  <Hyperlink fx:id="hyperLinkYoutube" text="Hyperlink">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" style="-fx-rotate: -90;" text="by Mr.Potato" textAlignment="CENTER" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="180.0">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
