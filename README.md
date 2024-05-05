@@ -32,7 +32,7 @@ After that you need enter count of columns, rows and index of the table(it start
 Finally, you need choose path of the excel file, name it and press the button `Save`:
 ![5](images/5.png)
 
-Voilà:sparkles:
+Voilà :sparkles::
 ![6](images/6.png)
 
 **Benefits:**
