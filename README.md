@@ -18,7 +18,7 @@ To use the project, you can follow these steps:
 
 **Example:**
 
-You can watch the [video](https://www.youtube.com/watch?v=gJ8k7nHG7TM)
+You can watch the [video](https://www.youtube.com/watch?v=ANGHXdW4NJY)
 
 Firstly, you need copy link of the site and paste in a field `link`:
 ![1](images/1.png)
