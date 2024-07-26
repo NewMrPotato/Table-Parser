@@ -1,8 +1,8 @@
-**Java Project: HTML Table Parser and Excel Converter**
+# Java Project: HTML Table Parser and Excel Converter
 
 This Java project is designed to extract tables from HTML web pages and convert them into Excel (XLSX) files. It allows users to specify the URL of a web page, an XPath expression to select the target table, and the number of rows and columns to extract.
 
-**Usage:**
+## Usage:
 
 To use the project, you can follow these steps:
 
@@ -16,7 +16,7 @@ To use the project, you can follow these steps:
    - `PathOfSaveFile`: Optional path where the Excel file should be saved (if provided).
    - `nameOfSaveFile`: Optional name of the Excel file to be saved (if not provided, it defaults to "NewTable").
 
-**Example:**
+## Example:
 
 You can watch the [video](https://www.youtube.com/watch?v=ANGHXdW4NJY)
 
@@ -35,7 +35,7 @@ Finally, you need choose path of the excel file, name it and press the button `S
 Voilà :sparkles::
 ![6](images/6.png)
 
-**Benefits:**
+## Benefits:
 
 This project provides several benefits:
 
