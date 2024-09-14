@@ -1,4 +1,11 @@
+
 # Java Project: HTML Table Parser and Excel Converter
+![GitHub top language](https://img.shields.io/github/languages/top/NewMrPotato/Music-Quiz)
+![GitHub](https://img.shields.io/github/license/NewMrPotato/Music-Quiz)
+![GitHub Repo stars](https://img.shields.io/github/stars/NewMrPotato/Music-Quiz)
+![GitHub issues](https://img.shields.io/github/issues/NewMrPotato/Music-Quiz)
+
+## About
 
 This Java project is designed to extract tables from HTML web pages and convert them into Excel (XLSX) files. It allows users to specify the URL of a web page, an XPath expression to select the target table, and the number of rows and columns to extract.
 
